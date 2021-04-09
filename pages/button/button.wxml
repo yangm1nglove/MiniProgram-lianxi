@@ -1,0 +1,50 @@
+<text>button</text>
+<!-- 
+    button标签 
+        外观的属性
+        1.size 控制按钮大小
+            default默认 
+            mini 小按钮
+        2.type 控制按钮颜色
+            1.default
+            2.primary 绿色
+            3. warn 红色
+        3. plain 是否为缕空
+        4.loading 按钮是否出现loading图标
+--> 
+<button>默认按钮</button>
+<button size="mini">mini 按钮</button>
+<button type="primary">绿色按钮</button>
+<button type='warn'>红色按钮</button>
+<button type='warn' plain>红色按钮</button>
+<button type="primary" loading>绿色按钮</button>
+
+
+
+<!-- 
+    button按钮的开放能力 
+        open-type:
+        contact 直接打开 客服对话功能 需要在微信小程序的后台配置
+        share 转发当前的小程序 到微信朋友中 不能把小程序分享到朋友圈
+        getPhoneNumber 获取当前用户的手机号码信息 结合一个事件来使用
+            1.绑定一个事件 bindgetphonenumber
+            2.在事件的回调函数中 通过参数来获取信息
+            3.获取到的信息 已经加密过了
+                需要用户自己搭建小程序的后台服务器,在后台服务中进行解析 手机号码 再返回小程序中 就可以看到信息了
+        getUserInfo 获取当前用户的个人信息  
+            用户个人信息存在于 e.detail.userInfo中 
+        launchApp 在小程序当中 直接打开App
+            需要现在app中通过app的某个链接打开 小程序
+            在小程序中再通过按钮功能 重新打开app
+        openSetting 打开小程序内置的 授权页面
+            1.授权页面中 只会出现曾经点击过的权限
+        feedback 打开小程序内置的 意见反馈页面
+            1.只能够通过真机调试来打开
+-->
+<button open-type="contact">contact</button>
+<button open-type="share">share</button>
+<button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">getPhoneNumber</button>
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">getUserInfo</button>
+<button open-type="launchApp">launchApp</button>
+<button open-type="openSetting">openSetting</button>
+<button open-type="feedback">feedback</button>

@@ -1,0 +1,16 @@
+<!-- 
+  selectable:长按标签复制
+  
+-->
+<!-- <text selectable decode>
+  text
+  &nbsp;
+  123
+</text> -->
+<!-- 图片标签 
+    src:图片路径    
+    图片存在默认宽高 320*240  
+    mode:决定 图片内容 如何和图片标签 宽高做适配
+    小程序当中的图片,直接支持懒加载 lazy-load
+-->
+<image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" mode="aspectFill" lazy-load="true"></image>

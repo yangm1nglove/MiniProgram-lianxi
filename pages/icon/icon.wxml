@@ -1,0 +1,16 @@
+<view>小程序的icon图表属性</view>
+<!-- 
+    小程序的icon属性 
+    type:指定属性
+    size:图标大小
+    color:图标颜色    
+-->
+<icon type="success" size="60" color="#9400ff"/>
+<icon type="success_no_circle"></icon>
+<icon type="info"></icon>
+<icon type="warn"></icon>
+<icon type="waiting"></icon>
+<icon type="cancel"></icon>
+<icon type="download"></icon>
+<icon type="search"></icon>
+<icon type="clear"></icon>

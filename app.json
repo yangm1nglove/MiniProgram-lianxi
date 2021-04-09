@@ -1,0 +1,62 @@
+{
+  "pages":[
+    "pages/zujian/zujian", 
+    "pages/index/index", 
+    "pages/checkbox/checkbox",  
+    "pages/radio/radio",  
+    "pages/icon/icon",
+    "pages/button/button",
+    "pages/richText/richText",
+    "pages/navigator/navigator",
+    "pages/swiper/swiper",
+    "pages/biaoqian/biaoqian",
+    "pages/buju/buju",
+    "pages/demo04/demo04",
+    "pages/demo03/demo03",
+    "pages/img/img",
+    "pages/mine/mine",
+    "pages/serach/search",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#0094ff",
+    "navigationBarTitleText": "我的应用",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":true,
+    "backgroundColor":"#000"
+  },
+  "tabBar": {
+    "list": [
+        {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./icon/_home.png",
+        "selectedIconPath": "./icon/home.png"
+      },
+      {
+        "pagePath": "pages/img/img",
+        "text": "图片",
+        "iconPath": "./icon/_img.png",
+        "selectedIconPath": "./icon/img.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "./icon/_my.png",
+        "selectedIconPath": "./icon/my.png"
+      },
+      {
+        "pagePath": "pages/serach/search",
+        "text": "搜索",
+        "iconPath": "./icon/_search.png",
+        "selectedIconPath": "./icon/search.png"
+      }
+  ],
+  "color":"#009400", 
+  "selectedColor":"#ff9400",
+  "backgroundColor":"#02454d"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

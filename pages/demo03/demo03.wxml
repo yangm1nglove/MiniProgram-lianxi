@@ -1,0 +1,71 @@
+<!--
+    1.test 相当于以前web中的span标签 行内元素 不会换行
+    2.view 相当于过去的div标签 块元素 会换行
+-->
+<text>我是text标签,相当于web中的span标签 行内元素 不会换行</text>
+<view>{{msg}}</view>
+<text>{{num}}</text>
+<text>是否是伪娘:{{bool}}</text>
+<!-- 在标签的属性中使用  -->
+<view data-num="{{bool}}">111</view>
+<!-- 字符串和花括号之中千万不要存在空格,会出现错误的 -->
+
+<!-- 
+    7运算 ->表达式
+ -->
+<view>{{3+2}}</view>
+
+<!-- 列表循环 wx:for="{{数组或者对象}}"
+    wx:for-item="循环项的名称" 
+    wx:for-index="循环项的索引值" 
+    wx:key 对应的下标 唯一的值,提高渲染性能
+    wx:item 每一项内容 
+
+    当出现数组的嵌套循环的时候 尤其要注意 以下绑定的名称 不要重名
+    只有一层循环的话 (wx:for-item  wx:for-index) 可以省略 
+-->
+<view wx:for="{{list}}" wx:key="index" wx:item='item'>
+    {{index}}---{{item.name}}
+</view>
+
+<!-- 对象循环  wx:for="" wx:for-item="对象的值"              
+    wx:for-index="index"
+    循环对象的时候,最好把item和index的名称都修改一下
+-->
+<view wx:for="{{person}}" wx:key="index">
+    {{index}} ---{{item}}
+</view>
+
+<!-- 10.block标签
+    1.占位符标签
+    2.写代码的时候,是存在的
+    3.渲染的时候 移除
+-->
+<block>
+
+</block>
+<!-- 11.条件渲染
+    wx:if={{}}
+    wx:if
+    wx:elif
+    wx:else 
+    2.hidden
+    在标签直接加上属性hidden
+    hidden="{{true}}"
+
+    什么情况下使用哪个
+    不频繁 vx:if  频繁:hidden
+    类似于 v-if v-show 
+-->
+<view>
+    <view>条件渲染</view>
+    <view wx:if="{{false}}">1</view>
+    <view wx:elif="{{false}}">2</view>
+    <view wx:else>我是wx:else </view>
+</view>
+
+<view>
+    <view>-------设置------------</view>
+    <view wx:if="{{false}}">隐藏</view>
+    <view hidden>隐藏</view>
+</view>

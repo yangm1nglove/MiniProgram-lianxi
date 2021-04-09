@@ -1,0 +1,24 @@
+<!-- 
+    轮播图外层容器 swiper
+    每一个轮播项 swiper-item
+    swiper标签 存在默认样式 
+    先找出来 原图的宽度和高度 在等比例给swiper设置宽高 
+    原图 520*280   
+    swiper宽度/swiper高度 = 原图宽/原图高
+    autoplay:自动播放
+    interval:修改轮播时间 
+    circular:无缝轮播 
+    indicator-dots:指示器
+    indicator-color:默认颜色
+    indicator-active-color:当前选中的颜色
+-->
+<swiper autoplay interval="1500" 
+        circular 
+        indicator-dots="true"
+        indicator-color="red"
+        indicator-active-color="#fff"
+>
+    <swiper-item><image mode="widthFix" src="//img.alicdn.com/imgextra/i3/2206686532409/O1CN01j8L9wj1TfMnBksJIm_!!2206686532409-0-lubanimage.jpg"/></swiper-item>
+    <swiper-item><image mode="widthFix" src="//aecpm.alicdn.com/simba/img/TB1XotJXQfb_uJkSnhJSuvdDVXa.jpg"/></swiper-item>
+    <swiper-item><image mode="widthFix" src="//aecpm.alicdn.com/simba/img/TB1JNHwKFXXXXafXVXXSutbFXXX.jpg"/></swiper-item>
+</swiper>

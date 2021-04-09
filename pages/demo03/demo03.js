@@ -1,0 +1,27 @@
+Page({
+    data:{
+        msg:"你好吗",
+        num:10000,
+        bool:true,
+        person:{
+            msg:"你好吗",
+            num:10000,
+            bool:true,
+            sex:88
+        },
+        list:[
+            {
+                id:0,
+                name:"小一"
+            },
+            {
+                id:1,
+                name:"小er"
+            },
+            {
+                id:2,
+                name:"小叁"
+            },
+        ]
+    },
+})
